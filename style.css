@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --background: white;
+}
+
+.header {
+    background-color: var(--background);
+    padding: 20px;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100%;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav li:hover {
+    background-color: lightgray;
+}
+
+nav a {
+    text-decoration: none;
+    color: gray;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.item-list li .item-name {
+    font-weight: bold;
+}
+
+.item-list .item {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.item-list .item img {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 5px;
+}
+
+.item-list .item .name {
+    font-size: 16px;
+    color: #333;
+}
+
+.item-list .item .amount {
+    font-size: 16px;
+    color: #333;
+}
+.item-list .item .edit-button {
+    background-color: #006c38;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item-list .item .edit-button:hover {
+    background-color: #005a2e;
+}
+
+.item-list .item .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item-list .item .delete-button:hover {
+    background-color: #c82333;
+}
