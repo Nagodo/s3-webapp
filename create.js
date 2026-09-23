@@ -1,9 +1,11 @@
 const createForm = document.getElementById("createForm");
 const createError = document.getElementById("errorMessage");
 
-const editForm = document.getElementById("editForm");
-
 const itemsContainer = document.getElementById("items");
+
+const logo = document.getElementById("logo");
+
+const sound = document.getElementById("sound");
 
 let items = [];
 
@@ -37,6 +39,9 @@ createForm.addEventListener("submit", (event) => {
     }
 
     createError.textContent = "";
+
+    logo.classList.add("spin");
+    sound.play();
 
     AddItem(name, amount);
 });
