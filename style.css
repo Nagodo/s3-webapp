@@ -120,3 +120,9 @@ nav a:hover {
 .item-list .item .delete-button:hover {
     background-color: #c82333;
 }
+
+.errormessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
