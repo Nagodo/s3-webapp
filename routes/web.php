@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::get('/create', [CollectableController::class, 'ShowAll'])->name('collectable.create');
+Route::get('/create', [CollectableController::class, 'Create'])->name('collectable.create');
