@@ -1,48 +1,26 @@
+body {
+    font-family: 'Instrument Sans', system-ui, sans-serif;
+}
+
 .header {
-    padding: 20px;
-    text-align: center;
+    position: sticky;
+    top: 0;
 
     display: flex;
-    justify-content: space-between;
-
     align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding: 0.75rem 1.5rem;
+
+    background-color: color-mix(in srgb, var(--background) 85%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-
-    border-radius: 100%;
-
-
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
-nav li:hover {
-    background-color: lightgray;
-}
-
-nav a {
+.brand {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--foreground);
     text-decoration: none;
-    color: gray;
-
-    font-size: 18px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: black;
 }

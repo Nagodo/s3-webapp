@@ -1,0 +1,27 @@
+services:
+    database:
+        image: mysql:latest
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_USER: ${DB_USERNAME}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
+        command: mysqld
+        volumes:
+            - dev-db:/var/lib/mysql
+
+    database-explorer:
+        image: phpmyadmin
+        restart: always
+        ports:
+            - "8036:80"
+        environment:
+            PMA_HOST: database
+            PMA_PORT: 3306
+            PMA_USER: ${DB_USERNAME}
+            PMA_PASSWORD: ${DB_PASSWORD}
+
+volumes:
+    dev-db:

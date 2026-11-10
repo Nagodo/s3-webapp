@@ -1,20 +1,17 @@
 <html>
 <head>
     <title>Collectable</title>
-    @vite('resources/css/layout.css')
-    {{ $head ?? '' }}
+    
+    @fonts
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+  
 </head>
 
 <body>
     <header class="header">
-        <img src="logo.jpg" alt="Logo" class="logo">
-    
-        <nav>
-            <ul>
-                <li><a href={{ route('collectable.create') }}>Create</a></li>
-                <li><a href="read.html">Read</a></li>
-            </ul>
-        </nav>
+        <a href="{{ route('index') }}" class="brand">Collectable</a>
+
+        <x-navigation></x-navigation>
     </header>
 
     {{ $slot }}
