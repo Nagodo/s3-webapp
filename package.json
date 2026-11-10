@@ -4,7 +4,8 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "helpmodels": "php artisan ide-helper:models --nowrite"
     },
     "devDependencies": {
         "concurrently": "^10.0.3",
